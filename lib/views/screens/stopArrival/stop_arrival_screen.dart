@@ -1,7 +1,9 @@
 // ignore_for_file: sized_box_for_whitespace
 
+import 'package:driver_app/views/screens/itemLevelException/item_level_exception.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 /// ─────────────────────────────────────────────
 ///  Static colour constants (replace with your
@@ -393,7 +395,9 @@ class _StopArrivalViewState extends State<StopArrivalView> {
             // Complete Pickup / Delivery
             Flexible(
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Get.to(ItemLevelExceptionView());
+                },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: _Colors.complete,
                   shadowColor: Colors.transparent,
